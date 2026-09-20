@@ -1,0 +1,35 @@
+﻿<Application x:Class="SebPatcherTool.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Startup="Application_Startup">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+
+                <!-- default theme (designer butuh ini) -->
+                <ResourceDictionary Source="Themes/Light.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+            <FontFamily x:Key="AppFont">
+                pack://application:,,,/SEBPatcheTool;component/Themes/Fonts/#SF Pro Display
+            </FontFamily>
+
+            <!-- Apply ke semua control -->
+            <Style TargetType="{x:Type Control}">
+                <Setter Property="FontFamily" Value="{StaticResource AppFont}"/>
+            </Style>
+
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="FontFamily" Value="{StaticResource AppFont}"/>
+            </Style>
+
+            <Style TargetType="{x:Type TextBox}">
+                <Setter Property="FontFamily" Value="{StaticResource AppFont}"/>
+            </Style>
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+
+</Application>
