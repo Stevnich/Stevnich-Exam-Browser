@@ -1,0 +1,16 @@
+SafeExamBrowser.Client
+SafeExamBrowser.ResetUtility
+SafeExamBrowser.Runtime
+SafeExamBrowser.Client
+SafeExamBrowser.Services
+SebWindowsConfig
+
+---------------------------
+Kesalahan Mulai Sesi
+---------------------------
+SEB gagal memulai sesi baru! Silakan lihat file log untuk informasi lebih lanjut.
+
+C:\Users\steve\AppData\Local\SafeExamBrowser\Logs\2026-03-12_21h32m17s_Runtime.log
+---------------------------
+OK   
+---------------------------

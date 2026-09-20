@@ -1,0 +1,49 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0 Times New Roman;}{\f1 Arial;}}
+\paperw12240\paperh15840\margl1440\margr1440\margt1440\margb1440
+\deflang1033\pard\plain\fs32\b\f1 SEB_PATCH V2.0 BY STEVNICH\fs24\b0\f1\par
+\pard\plain\fs20\i\f1 (Dikembangkan pada Selasa, 10 Maret 2026)\i0\f1\par
+\par
+\pard\plain\fs24\b\f1 TOLONG BACA INI!!!\b0\f1\par
+\pard\plain\fs20\f1 Ini adalah daftar tentang segala perubahan yang ditambahkan di Patch Safe Exam Browser Versi 2.\par
+\par
+Patch ini menambahkan mode debugging dan fitur dummy proctor, serta melakukan penyeragaman warna ikon sistem untuk konsistensi visual dan keamanan.\par
+\par
+\pard\plain\fs24\b\f1 Hal yang Ditambahkan\b0\f1\par
+\pard\plain\fs22\b\f1 Debugging Mode Switch\b0\f1\par
+\pard\plain\fs20\f1\tab - Keybind: Host + L\par
+\tab - Peralihan antara dua mode:\par
+\tab\tab \b Normal\b0\par
+\tab\tab Perilaku seperti SEB standar: keybind Windows dinonaktifkan, Alt+Tab ditangani oleh SEB, dan tampilan beralih ke mode kiosk dengan latar hitam.\par
+\tab\tab \b Debug\b0\par
+\tab\tab Menonaktifkan semua mekanisme penguncian SEB: mode kiosk dimatikan sehingga desktop biasa akan tampak.\par
+\tab\tab Semua kombinasi tombol Windows berfungsi kembali, termasuk Alt+Tab.\par
+\tab\tab SEB sepenuhnya menonaktifkan handler keybind internal (MATIKAN TOTAL HANDLER KEYBIND DARI SEB).\par
+\par
+\pard\plain\fs22\b\f1 Dummy Proctor System\b0\f1\par
+\pard\plain\fs20\f1\tab - Jika konfigurasi mengharuskan sesi proctor tetapi fitur proctoring tidak aktif, ikon dan peringatan proctor tetap ditampilkan secara visual.\par
+\tab - Namun, tampilan tersebut bersifat dummy, tidak ada fungsi proctoring yang dijalankan (hanya tampilan ikon/peringatan tanpa aksi).\par
+\par
+\pard\plain\fs24\b\f1 Perubahan (Modifikasi)\b0\f1\par
+\pard\plain\fs22\b\f1 Penyeragaman Warna Ikon Sistem\b0\f1\par
+\pard\plain\fs20\f1\tab - Semua ikon sistem (system icons) dikembalikan ke warna hitam (#000000).\par
+\tab - Tujuan: menjaga konsistensi visual terhadap latar aplikasi dan mengurangi risiko informasi visual yang mudah terlihat atau membingungkan pengguna; juga meningkatkan aspek keamanan tampilan.\par
+\par
+\pard\plain\fs22\b\f1 Tema Gelap akan dihilangkan\b0\f1\par
+\pard\plain\fs20\f1\tab Pengembangan Tema Gelap akan dihentikan demi keselarasan dengan antarmuka lainnya dan kestabilan antarmuka sistem.\par
+\par
+\pard\plain\fs22\b\f1 Jendela Companion dihentikan\b0\f1\par
+\pard\plain\fs20\f1\tab Untuk mengurangi jumlah resource yang digunakan SEB saat program berjalan, Companion akan dihilangkan.\par
+\par
+\pard\plain\fs22\b\f1 Pendeteksi VM dihilangkan\b0\f1\par
+\pard\plain\fs20\f1\tab Safe Exam Browser tidak lagi mencoba mendeteksi lingkungan mesin virtual saat anda menjalankan SEB di mesin virtual, meskipun konfigurasi "Allow to run inside Virtual Machine" dimatikan.\par
+\par
+\pard\plain\fs22\b\f1 Fleksibilitas dalam Mengatur UI SEB\b0\f1\par
+\pard\plain\fs20\f1\tab Sekarang anda dapat mengatur cara beberapa komponen bekerja, seperti durasi animasi dan appear dari panel kiri Action Center, kustomisasi icon proctor palsu, dan Edit secara langsung halaman web.\par
+\par
+\pard\plain\fs22\b\f1 Lokasi Konfigurasi\b0\f1\par
+\pard\plain\fs20\f1 Sama seperti versi sebelumnya, semua konfigurasi patcher akan disimpan di folder SafeExamBrowser dalam folder Roaming.\par
+\par
+\pard\plain\fs20\f1\b C:\Users\<NAMA USER PC>\AppData\Roaming\SafeExamBrowser\b0\par
+\par
+Anda dapat mengatur konfigurasi ini dengan mudah dengan menggunakan program "SEB Patcher Tool" atau membuat filenya secara manual.\par
+}
